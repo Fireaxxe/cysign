@@ -1,22 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CySign Support</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; max-width: 800px; }
-    h1 { color: #333; }
-    a { color: #007bff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    :root {
+      color-scheme: light dark;
+      --text: #222;
+      --bg: #fff;
+      --accent: #0073e6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #eee;
+        --bg: #111;
+        --accent: #4dabff;
+      }
+    }
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      max-width: 800px;
+      line-height: 1.7;
+    }
+    h1 {
+      font-size: 1.8rem;
+      color: var(--accent);
+    }
+    h2 {
+      margin-top: 2rem;
+      color: var(--accent);
+      font-size: 1.2rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+    .card {
+      background: rgba(0,0,0,0.03);
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin-top: 1.5rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      .card {
+        background: rgba(255,255,255,0.05);
+      }
+    }
   </style>
 </head>
 <body>
   <h1>CySign Support</h1>
-  <p>Welcome to the official support page for <b>CySign</b>.</p>
-  <p>If you have any issues, feedback, or questions, please contact us:</p>
-  <p>📧 <a href="mailto:kotsiosfireaxe@gmail.com">kotsiosfireaxe@gmail.com</a></p>
-  <hr>
-  <p>Read our <a href="./privacy.html">Privacy Policy</a></p>
+
+  <p>Welcome to the official support page for <strong>CySign</strong>, your companion app for mastering the Cyprus driving theory test.</p>
+
+  <div class="card">
+    <h2>Need Help?</h2>
+    <p>If you have questions, encounter a bug, or wish to share feedback, feel free to reach out:</p>
+    <p>📧 <a href="mailto:kotsiosfireaxe@gmail.com">kotsiosfireaxe@gmail.com</a></p>
+  </div>
+
+  <div class="card">
+    <h2>Useful Links</h2>
+    <ul>
+      <li><a href="./privacy.html">Privacy Policy</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.fireaxe.cysign" target="_blank">Google Play Store</a></li>
+      <li><a href="https://apps.apple.com/app/id6752268195" target="_blank">App Store</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    © 2025 CySign. All rights reserved.
+  </footer>
 </body>
 </html>
